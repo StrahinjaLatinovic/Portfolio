@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-barba="wrapper">
+    <svg id="curve-svg" class="curve-svg" xmlns="http://www.w3.org/2000/svg">
+      <path id="curve-path" d="M0 300 Q50 0 100 300 L100 600 Q50 900 0 600 Z" />
+    </svg>
+
+    <div class="titlesForPages">
+      <div class="titlesForPages__home ap">Home</div>
+      <div class="titlesForPages__work ap">My Protfolio</div>
+      <div class="titlesForPages__pro ap">Lemonaide</div>
+      <div class="titlesForPages__about ap">About</div>
+      <div class="titlesForPages__contact ap">Contact</div>
+    </div>
+    <button
+      class="button"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      <div class="slider" id="slider">
+        <div class="el" id="menuLabel">
+          <span>Menu</span>
+        </div>
+        <div class="el" id="closeLabel">
+          <span>Close</span>
+        </div>
+      </div>
+    </button>
+    <nav id="menu" class="menu" aria-hidden="true">
+      <div class="menu-links">
+        <ul>
+          <li class="linkContainer"><a href="/" class="link">Home</a></li>
+          <li class="linkContainer"><a href="/about" class="link">About</a></li>
+          <li class="linkContainer">
+            <a href="/my-work/my-protfolio.html" class="link">Services</a>
+          </li>
+          <li class="linkContainer">
+            <a href="/contact" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main data-barba="container" data-barba-namespace="contact">
+      <header class="contact__header">
+        <div
+          class="marquee3k app marquee3k-contact"
+          data-speed="1"
+          data-reverse="bool"
+          data-pausable="bool"
+        >
+          <!--Just remove content of h2 tag and your page becomes unresponsive -->
+          <!--Please open your task manager for clear view -->
+
+          <h4 class="title__marquee">Let's work together -</h4>
+        </div>
+        <section class="conntact__section">
+          <div class="contact-info-wrapper">
+            <div class="contact-info-item">
+              <div class="contact-info-image">
+                <img src="images/Intro1.jpg" alt="Image 1" />
+              </div>
+              <div class="contact-info-line"></div>
+              <div class="contact-info-title">
+                <h5>New business</h5>
+              </div>
+              <div class="contact-info-detail">
+                <p>Viber: <a href="tel:+31620963831">+381 6 20 96 38 31</a></p>
+              </div>
+              <div class="contact-info-detail">
+                <p>
+                  WhatsApp: <a href="tel:+31614979840">+31 6 14 97 98 40</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-image">
+                <img src="images/Intro1.jpg" alt="Image 1" />
+              </div>
+              <div class="contact-info-line"></div>
+              <div class="contact-info-title">
+                <h5>New business</h5>
+              </div>
+              <div class="contact-info-detail">
+                <p>Viber: <a href="tel:+31620963831">+381 6 20 96 38 31</a></p>
+              </div>
+              <div class="contact-info-detail">
+                <p>
+                  WhatsApp: <a href="tel:+31614979840">+31 6 14 97 98 40</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-image">
+                <img src="images/Intro1.jpg" alt="Image 1" />
+              </div>
+              <div class="contact-info-line"></div>
+              <div class="contact-info-title">
+                <h5>Mail us</h5>
+              </div>
+              <div class="contact-info-detail">
+                <p>
+                  <a href="mailto:info@aanstekelijk.nl"
+                    >strahinjalatinovic@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-image">
+                <img src="images/Intro1.jpg" alt="Image 1" />
+              </div>
+              <div class="contact-info-line"></div>
+              <div class="contact-info-title">
+                <h5>Follow us</h5>
+              </div>
+              <div class="contact-info-detail">
+                <p>
+                  <a
+                    href="https://www.instagram.com/aanstekelijk.agency/"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </p>
+              </div>
+              <div class="contact-info-detail">
+                <p>
+                  <a
+                    href="https://www.linkedin.com/company/aanstekelijk/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    </main>
+
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>

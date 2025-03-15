@@ -1,0 +1,167 @@
+@use "variables" as *;
+@import "reset.scss";
+@import "HomePage/homeMarque";
+@import "HomePage/homeAbouteUs";
+@import "HomePage/homeSlider";
+@import "HomePage/homeScrollSlider";
+@import "HomePage/homeFooter";
+@import "WorkPage/cardStack";
+@import "WorkPage/footerWork";
+@import "WorkPage/headerWork";
+@import "menu";
+
+@import "aboute";
+
+@import "buttons";
+@import "projecsSection";
+
+@import "pageTransition";
+
+@import "workPage";
+@import "WorkPage/workGrid";
+@import "WorkPage/mokeup";
+@import "ContactPage/contact";
+
+html {
+  background-color: #1c1d20;
+}
+body {
+  background-color: #1c1d20;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-b {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  color: black;
+}
+
+.beckGroundImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161616; /* Pozadina loading screena */
+  z-index: 9999; /* Budi iznad svega */
+}
+
+.loading-counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 20%;
+}
+
+.grid {
+  position: absolute;
+  left: -10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 120%;
+}
+.img-container {
+  height: 100px;
+  flex: 1; /* Unutarnji kontejneri Ä‡e podijeliti dostupan prostor u visini */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+/* CSS za sliku unutar .img-container.ss */
+.img-container.ss img {
+  width: 100%; /* Širina slike */
+  height: 100%; /* Visina slike */
+  object-fit: cover; /* Osigurava da slika zauzme ceo prostor bez deformacije */
+  object-position: center; /* Centrira sliku */
+  display: block; /* Uklanja dodatni prostor ispod slike */
+  overflow: hidden;
+}
+
+.n {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.ss {
+  position: relative;
+  z-index: 99999999999;
+}
+
+.n {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.ss {
+  position: relative;
+  z-index: 99999999999;
+}
+.img-container {
+  height: 100px;
+  flex: 1; /* Unutarnji kontejneri Ä‡e podijeliti dostupan prostor u visini */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scrolling-text {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.rail {
+  display: flex;
+}
+.bbbb {
+  white-space: nowrap;
+  font-size: 200px;
+  font-weight: 900;
+  margin-right: 20px;
+  line-height: 1em;
+  margin: 0 2rem 0 0;
+  color: white;
+}
+
+// .barba-container {
+//   position: static; /* Osiguraj da nema nepotrebnih transformacija */
+//   transform: none;
+// }

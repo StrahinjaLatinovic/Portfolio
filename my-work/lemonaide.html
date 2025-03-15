@@ -1,0 +1,68 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App - Page 2</title>
+
+    <style>
+      .m {
+        height: 200vh;
+      }
+    </style>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Ovo je sadržaj koji se neće menjati između stranica (npr. header, footer) -->
+    <button
+      class="button"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      <div class="slider" id="slider">
+        <div class="el" id="menuLabel">
+          <span>Menu</span>
+        </div>
+        <div class="el" id="closeLabel">
+          <span>Close</span>
+        </div>
+      </div>
+    </button>
+
+    <!-- Menu - sadržaj koji se proširuje uz animaciju -->
+    <nav id="menu" class="menu" aria-hidden="true">
+      <div class="menu-links">
+        <ul>
+          <li class="linkContainer"><a href="/" class="link">Home</a></li>
+          <li class="linkContainer"><a href="/about" class="link">About</a></li>
+          <li class="linkContainer">
+            <a href="/services" class="link">Services</a>
+          </li>
+          <li class="linkContainer">
+            <a href="/contact" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <svg id="curve-svg" class="curve-svg" xmlns="http://www.w3.org/2000/svg">
+      <path id="curve-path" d="M0 300 Q50 0 100 300 L100 600 Q50 900 0 600 Z" />
+    </svg>
+    <div class="ddd">
+      <a href="/index.html">Home</a>
+      <a href="/my-work/my-protfolio.html">Work</a>
+      <a href="/page2.html">Page 2</a>
+    </div>
+
+    <!-- Ovo je sadržaj koji se menja između stranica (barba-container) -->
+    <main data-barba="container" data-barba-namespace="lemonaide">
+      <h1>Stranica 2</h1>
+      <div class="m"></div>
+      <footer></footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

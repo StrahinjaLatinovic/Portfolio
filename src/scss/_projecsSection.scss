@@ -1,0 +1,92 @@
+.projects {
+  max-width: 1750px;
+  margin: 0 auto;
+
+  &__wrapper {
+    padding-inline: 1.5rem;
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
+
+  &__item {
+    // height: 100%;
+    width: 100%;
+    display: flex;
+
+    margin-top: 10rem;
+  }
+
+  &__text {
+    position: relative;
+    padding-inline: 1rem;
+    align-self: flex-end;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .projects__item:hover .projects__text {
+    opacity: 1; /* Povecavamo opacity na 1 kada se hoveruje */
+  }
+
+  &__title {
+    font-size: clamp(5rem, 5vw, 10rem);
+    flex: 0 0 auto;
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__img {
+    width: 25%;
+    flex: 0 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .spacer {
+    // flex: 1 0 0%;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-inline: 1rem;
+    align-self: flex-end;
+    margin-bottom: 25px;
+    opacity: 0.4;
+  }
+  .sm {
+    width: 8%;
+  }
+}
+
+/* Media query za manje ekrane (npr. do 768px) */
+@media (max-width: 768px) {
+  .projects__item {
+    flex-direction: column; /* Stavlja sve elemente jedan ispod drugog */
+    margin-top: 2rem; /* Manji razmak između elemenata */
+  }
+
+  .r {
+    flex-direction: column; /* Stavlja sve elemente jedan ispod drugog */
+    flex-direction: column-reverse;
+    margin-top: 2rem; /* Manji razmak između elemenata */
+  }
+
+  .projects__img {
+    width: 100%; /* Slika će zauzeti 100% širine */
+    margin-bottom: 1rem; /* Manji razmak ispod slike */
+  }
+
+  .projects__title {
+    font-size: clamp(2rem, 3vw, 2rem);
+    margin-bottom: 2rem;
+  }
+
+  .projects__text {
+    opacity: 1; /* Vratimo opacitet na 1 na manjim ekranima */
+    align-self: flex-start;
+  }
+}

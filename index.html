@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Portfolio of a front-end developer and designer. Explore my work in web design, UX/UI design, and front-end development. I create modern, responsive, and user-centered web applications."
+    />
+    <meta
+      name="keywords"
+      content="front-end development, UX design, UI design, web design, responsive design, modern websites, web developer portfolio, user experience, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Strahinja Latinovic" />
+
+    <!-- Open Graph (for social media sharing) -->
+    <meta
+      property="og:title"
+      content="Front-End Developer & Designer Portfolio - Strahinja Latinovic"
+    />
+    <meta
+      property="og:description"
+      content="Explore my portfolio showcasing my front-end development and UX/UI design work. See my projects and learn about my approach to creating modern, user-friendly websites."
+    />
+    <meta
+      property="og:image"
+      content="https://your-site.com/path-to-image.jpg"
+    />
+    <!-- Image that represents your site -->
+    <meta property="og:url" content="https://your-site.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Front-End Developer & Designer Portfolio - Your Name"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore my portfolio showcasing my front-end development and UX/UI design work. See my projects and learn about my approach to creating modern, user-friendly websites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://your-site.com/path-to-image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Preload CSS (Performance optimization) -->
+    <link rel="preload" href="/src/style.css" as="style" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title for SEO -->
+    <title>
+      Front-End Developer & Designer Portfolio - Strahinja Latinovic
+    </title>
+  </head>
+  <body data-barba="wrapper" style="display: none">
+    <svg id="curve-svg" class="curve-svg" xmlns="http://www.w3.org/2000/svg">
+      <path id="curve-path" d="M0 300 Q50 0 100 300 L100 600 Q50 900 0 600 Z" />
+    </svg>
+    <!-- <div class="loading-screen" id="loading-screen">
+      <div class="loading-counter" id="loading-counter">
+        <span id="counter">0</span>%
+      </div> 
+      <div class="grid">
+        <div class="n prvi">
+          <div class="img-container one">
+            <img src="images/Intro1.jpg" alt="Image 1" class="image" />
+          </div>
+          <div class="img-container one">
+            <img src="images/Intro1.jpg" alt="Image 2" class="image" />
+          </div>
+          <div class="img-container one">
+            <img src="images/Intro2.jpg" alt="Image 3" class="image" />
+          </div>
+          <div class="img-container one">
+            <img src="images/Intro3.jpg" alt="Image 4" class="image" />
+          </div>
+        </div>
+        <div class="n drugi">
+          <div class="img-container two" style="order: 4">
+            <img src="images/Intro1.jpg" alt="Image 5" class="image" />
+          </div>
+          <div class="img-container two" style="order: 3">
+            <img src="images/Intro2.jpg" alt="Image 6" class="image" />
+          </div>
+          <div class="img-container two" style="order: 2">
+            <img src="images/Intro3.jpg" alt="Image 7" class="image" />
+          </div>
+          <div class="img-container two" style="order: 1">
+            <img src="images/Intro2.jpg" alt="Image 14" class="image" />
+          </div>
+        </div>
+        <div class="n treci">
+          <div class="img-container c">
+            <img src="images/Intro1.jpg" alt="Image 9" class="image" />
+          </div>
+          <div class="img-container c">
+            <img src="images/Intro2.jpg" alt="Image 10" class="image" />
+          </div>
+          <div class="img-container c ss">
+            <img
+              class="zoom"
+              src="images/Intro2.jpg"
+              alt="Image 11"
+              class="image"
+            />
+          </div>
+          <div class="img-container c">
+            <img src="images/Intro2.jpg" alt="Image 14" class="image" />
+          </div>
+        </div>
+        <div class="n cetvrti">
+          <div class="img-container t" style="order: 4">
+            <img src="images/Intro1.jpg" alt="Image 13" class="image" />
+          </div>
+          <div class="img-container t" style="order: 3">
+            <img src="images/Intro2.jpg" alt="Image 14" class="image" />
+          </div>
+          <div class="img-container t" style="order: 2">
+            <img src="images/Intro3.jpg" alt="Image 15" class="image" />
+          </div>
+          <div class="img-container t" style="order: 1">
+            <img src="images/Intro2.jpg" alt="Image 14" class="image" />
+          </div>
+        </div>
+        <div class="n peti">
+          <div class="img-container five">
+            <img src="images/Intro1.jpg" alt="Image 17" class="image" />
+          </div>
+          <div class="img-container five">
+            <img src="images/Intro2.jpg" alt="Image 18" class="image" />
+          </div>
+          <div class="img-container five">
+            <img src="images/Intro3.jpg" alt="Image 19" class="image" />
+          </div>
+          <div class="img-container five">
+            <img src="images/Intro2.jpg" alt="Image 14" class="image" />
+          </div>
+        </div>
+      </div>
+    </div>  -->
+
+    <div class="titlesForPages">
+      <div class="titlesForPages__home ap">Home</div>
+      <div class="titlesForPages__work ap">My Protfolio</div>
+      <div class="titlesForPages__pro ap">Lemonaide</div>
+      <div class="titlesForPages__about ap">About</div>
+      <div class="titlesForPages__contact ap">Contact</div>
+      <div class="titlesForPages__allWork ap">Work</div>
+    </div>
+
+    <div class="nav-b">
+      <a href="/index.html">Home</a>
+      <a href="/my-work/my-protfolio.html">Work</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/work.html">See more</a>
+      <a href="/about.html">about</a>
+    </div>
+
+    <!-- Button element, koji se koristi za pozivanje funkcije za otvaranje/zatvaranje menija -->
+    <button
+      class="button"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      <div class="slider" id="slider">
+        <div class="el" id="menuLabel">
+          <span>Menu</span>
+        </div>
+        <div class="el" id="closeLabel">
+          <span>Close</span>
+        </div>
+      </div>
+    </button>
+
+    <!-- Menu - sadržaj koji se proširuje uz animaciju -->
+    <nav id="menu" class="menu" aria-hidden="true">
+      <div class="menu-links">
+        <ul>
+          <li class="linkContainer"><a href="/" class="link">Home</a></li>
+          <li class="linkContainer"><a href="/about" class="link">About</a></li>
+          <li class="linkContainer">
+            <a href="/my-work/my-protfolio.html" class="link">Services</a>
+          </li>
+          <li class="linkContainer">
+            <a href="/contact" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <!-- Header content -->
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <div class="slide__img beckGroundImage">
+        <img src="images/1.avif" alt="" />
+      </div>
+
+      <div class="upper-l">
+        <section class="section__about">
+          <div class="container-sc">
+            <div class="about__flex__col">
+              <h3 class="about__title">
+                <div>Never make it</div>
+                <div>boring</div>
+              </h3>
+            </div>
+            <div class="co">
+              <div class="about__flex__col__r">
+                <div class="about__flex__col__r__wrapper">
+                  <div class="content-section ab">
+                    <p class="split-text first-row">
+                      <span class="word"
+                        ><span class="word-inner">Welcome,</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">I'm</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">a</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">web</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">designer</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">and</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">developer</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">with</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">over</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">5</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">years</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">of</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">experience</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">in</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">designing</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">and</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">developing</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">websites</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">and</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">applications</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">that</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">help</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">businesses</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">grow.</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">I</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">focus</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">on</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">creating</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">functional</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">and</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">user-friendly</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">designs</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">tailored</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">to</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">your</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">needs.</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">Let’s</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">work</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">together</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">and</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">create</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">something</span></span
+                      >
+                      <span class="word"
+                        ><span class="word-inner">amazing!</span></span
+                      >
+                    </p>
+                    <div class="button-prime">
+                      <a href="/about.html" class="button-prime-wrapper">
+                        <div class="button-prime-text">About</div>
+                        <div class="button-prime-circle">
+                          <span class="arrow">&#8594;</span>
+                          <!-- Strelica ka desno -->
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-client-marquee">
+          <div
+            class="marquee3k marquee3k-about"
+            data-pausable="bool"
+            data-speed="0.5"
+            data-reverse="false"
+          >
+            <div class="marquee-content">
+              <div class="marquee-item">
+                <img
+                  src="/images//marqueeLogos/laravel.svg"
+                  alt="laravel icon"
+                />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/nextjs.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/greensock.webp" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/vite.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/stripe.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/vue.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/webflow.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/wordpress.svg" alt="Logo 1" />
+              </div>
+              <div class="marquee-item">
+                <img src="/images//marqueeLogos/barba.png" alt="Logo 1" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-sc">
+          <div class="about__flex__work">
+            <h3 class="about__work">Worke done</h3>
+          </div>
+          <div class="button-prime">
+            <a href="/about.html" class="button-prime-wrapper">
+              <div class="button-prime-text">More work</div>
+              <div class="button-prime-circle">
+                <span class="arrow">&#8594;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-cell">
+            <!-- <img src="images/Intro1.jpg" alt="Image 1" /> -->
+            <img src="images/1.avif" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <!-- <img src="images/Intro1.jpg" alt="Image 2" /> -->
+            <img src="images/1.avif" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <!-- <img src="images/Intro1.jpg" alt="Image 3" /> -->
+            <img src="images/1.avif" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <!-- <img src="images/Intro1.jpg" alt="Image 3" /> -->
+            <img src="images/1.avif" alt="" />
+          </div>
+        </div>
+
+        <div class="flickity-page-dots-container">
+          <div class="project-counter">
+            <span id="current-slide">1</span>
+          </div>
+          <div class="flickity-progress-lines"></div>
+          <div class="total-slides">
+            <span id="total-slides">4</span>
+          </div>
+        </div>
+
+        <section class="gallery gallery--spacing">
+          <div class="gallery-container gallery--4 scroll-section-r">
+            <div class="gallery-wrap">
+              <!-- Gallery Items -->
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/1.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/2.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/3.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/4.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/5.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/6.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/7.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/8.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/8.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/8.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/8.jpg)"
+                ></div>
+              </div>
+              <div class="gallery__item">
+                <div
+                  class="gallery__item-inner"
+                  style="background-image: url(img/8.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="gallery__title gallery__title--right">
+            Now unfolds <br />eternity's grace
+          </h3>
+        </section>
+      </div>
+      <footer class="footer footer-word-r">
+        <h3 class="footer-title">
+          <div>Let's work</div>
+          <div>together</div>
+        </h3>
+        <div class="footer__container">
+          <div class="footer__form-wrapper">
+            <form class="footer__form" id="footerForm">
+              <div class="footer__form-group">
+                <div class="footer__question">
+                  <div class="footer__question-number">01</div>
+                  <label for="question1" class="footer__label">
+                    Your name?
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="question1"
+                  name="question1"
+                  class="footer__input"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="footer__form-group">
+                <div class="footer__question">
+                  <div class="footer__question-number">02</div>
+                  <label for="question2" class="footer__label">
+                    Your email?
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="question2"
+                  name="question2"
+                  class="footer__input"
+                  placeholder="strahinjalatinovic@gmail.com"
+                />
+              </div>
+              <div class="footer__form-group">
+                <div class="footer__question">
+                  <div class="footer__question-number">03</div>
+                  <label for="question3" class="footer__label">
+                    Services you are looking for?
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  id="question3"
+                  name="question3"
+                  class="footer__input"
+                  placeholder="Web Design, Web Development ..."
+                />
+              </div>
+              <div class="footer__form-group">
+                <div class="footer__question">
+                  <div class="footer__question-number">04</div>
+                  <label for="question5" class="footer__label">
+                    Your message
+                  </label>
+                </div>
+                <textarea
+                  id="question5"
+                  name="question5"
+                  class="footer__textarea"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+              <button type="submit" class="footer__submit-button">
+                <span class="footer__button-text-inner">Pošaljite</span>
+              </button>
+              <div
+                id="successMessage"
+                class="success-message"
+                style="display: none"
+              >
+                <p>Email je uspešno poslat!</p>
+                <button id="closeButton">Zatvori</button>
+              </div>
+            </form>
+          </div>
+          <div class="footer__additional-info">
+            <div class="footer__details-container">
+              <h3 class="footer__details-title">Contact Details</h3>
+              <div class="footer__details-content">
+                <p>
+                  Email:
+                  <a href="mailto:strahinjalatinovic@gmail.com"
+                    >strahinjalatinovic@gmail.com</a
+                  >
+                </p>
+                <p>
+                  WhatsApp:
+                  <a href="https://wa.me/38164571703" target="_blank"
+                    >+381 64571703</a
+                  >
+                </p>
+                <p>
+                  Viber:
+                  <a href="viber://chat?number=%2B38164571703" target="_blank"
+                    >+381 64571703</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="footer__details-container">
+              <h3 class="footer__details-title">Business Details</h3>
+              <div class="footer__details-content">
+                <p>Name: Strahinja Latinović</p>
+                <p>Location: Bangkok, Thailand</p>
+                <p>Local Time: <span id="local-time"></span></p>
+              </div>
+            </div>
+            <div class="footer__details-container">
+              <h3 class="footer__details-title">Social</h3>
+              <div class="footer__details-content">
+                <a href="https://www.instagram.com" target="_blank"
+                  >Instagram</a
+                >
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>

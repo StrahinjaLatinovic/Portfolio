@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="description"
+      content="Explore my personal portfolio where I explain how I designed and developed my website. Learn about the technologies I used, SEO best practices, and the user experience elements that make my website stand out."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web development, front-end development, UX design, UI design, SEO, JavaScript, HTML, CSS, web technologies, responsive design, front-end developer, personal portfolio"
+    />
+    <meta name="author" content="Your Name or Company" />
+
+    <meta
+      property="og:title"
+      content="Personal Portfolio: Web Development & Design - Your Name"
+    />
+    <meta
+      property="og:description"
+      content="Discover how I created my portfolio website, the technologies I used, and the approach I took to ensure a responsive, user-friendly design. Learn about my front-end development process and SEO optimizations."
+    />
+    <meta
+      property="og:image"
+      content="https://your-site.com/portfolio-image.jpg"
+    />
+    <meta property="og:url" content="https://your-site.com/my-work" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Personal Portfolio: Web Development & Design - Your Name"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore my personal portfolio website where I showcase my skills in front-end development, UX/UI design, and SEO best practices."
+    />
+    <meta
+      name="twitter:image"
+      content="https://your-site.com/portfolio-image.jpg"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="preload" href="/src/style.css" as="style" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Personal Portfolio: Web Development & Design - Your Name</title>
+  </head>
+
+  <body data-barba="wrapper" style="display: none">
+    <div class="ddd">
+      <a href="/index.html">Home</a>
+      <a href="/my-work/my-protfolio.html">Work</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/work.html">See more</a>
+      <a href="/about.html">about</a>
+    </div>
+
+    <svg id="curve-svg" class="curve-svg" xmlns="http://www.w3.org/2000/svg">
+      <path id="curve-path" d="M0 300 Q50 0 100 300 L100 600 Q50 900 0 600 Z" />
+    </svg>
+
+    <button
+      class="button"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      <div class="slider" id="slider">
+        <div class="el" id="menuLabel">
+          <span>Menu</span>
+        </div>
+        <div class="el" id="closeLabel">
+          <span>Close</span>
+        </div>
+      </div>
+    </button>
+    <nav id="menu" class="menu" aria-hidden="true">
+      <div class="menu-links">
+        <ul>
+          <li class="linkContainer"><a href="/" class="link">Home</a></li>
+          <li class="linkContainer"><a href="/about" class="link">About</a></li>
+          <li class="linkContainer">
+            <a href="/workepage" class="link">Services</a>
+          </li>
+          <li class="linkContainer">
+            <a href="/contact" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="titlesForPages">
+      <div class="titlesForPages__home ap">Home</div>
+      <div class="titlesForPages__work ap">My Protfolio</div>
+      <div class="titlesForPages__pro ap">Lemonaide</div>
+      <div class="titlesForPages__about ap">About</div>
+      <div class="titlesForPages__contact ap">Contact</div>
+    </div>
+
+    <main
+      class="main__work"
+      data-barba="container"
+      data-barba-namespace="protfolio"
+    >
+      <header class="project-work-header">
+        <div class="work-header-con">
+          <div class="black-bg">
+            <div class="ov">
+              <img src="/public/images/Intro1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="work-header-row">
+            <div class="work-header-col">
+              <h1 class="split-chars ww">
+                <span class="h1__inner normal">
+                  <div class="block__word">
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">P</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">R</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">O</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">T</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">F</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">O</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">L</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">I</div>
+                    </div>
+                    <div class="single__letter off">
+                      <div class="single__letter__inner up">O</div>
+                    </div>
+                  </div>
+                </span>
+              </h1>
+            </div>
+          </div>
+          <div class="bottom-links">
+            <div class="">protfolio</div>
+            <div class="">next</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ptoject-details">
+        <div class="con">
+          <h2 class="project-title">Details</h2>
+          <div class="ptoject-details-flex">
+            <div class="ptoject-details-col">
+              <div class="ptoject-details-wrap">
+                <div class="col-row">
+                  <h3 class="h3">services</h3>
+                  <p class="text-project">
+                    Creative concept, Video, Production
+                  </p>
+                </div>
+                <div class="col-row">
+                  <h3 class="h3">tech stack</h3>
+                  <p class="text-project">Vite, GSAP, BarbaJS</p>
+                </div>
+                <div class="col-row">
+                  <h3 class="h3">Credits</h3>
+                  <p class="text-project">hjgjhg</p>
+                </div>
+              </div>
+            </div>
+            <div class="ptoject-details-col-r">
+              <div class="col-row">
+                Welcome to my portfolio site! Here you can see everything I’ve
+                worked on so far in the world of design and front-end
+                development. This site is my personal project, and also a
+                showcase of my skills in creating modern, responsive websites.
+                Using HTML, CSS, JavaScript, and modern technologies like
+                React.js and GSAP animations, I’ve created a site that is easy
+                to navigate and visually appealing. Here, you won't just see my
+                projects, but also experience how I approached the design and
+                development of each one.
+              </div>
+              <div class="col-row">
+                <div class="col-row">
+                  For building my projects, I used **Vite** as the bundler,
+                  which allows for faster development and a more efficient build
+                  process. For animations, I rely on **GSAP**, a powerful
+                  library that helps me create smooth and engaging transitions.
+                  To enhance the user experience, I integrated **BarbaJS** for
+                  seamless page transitions, giving the site a smooth,
+                  single-page application feel. The website is fully responsive,
+                  ensuring it looks and functions well on any device, from
+                  mobile phones to desktops. I also followed best practices for
+                  **SEO** to ensure optimal visibility and performance in search
+                  engines, helping users easily find my work.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="device-mockup-laptop">
+      <div class="macbook-container">
+      
+       <div class="macbook-row">
+        <div class="macbook-col">
+        <div class="macbook-device">
+
+        <div class="screen-video">
+          <div class="ov">
+            <video autoplay muted loop class="op ov">
+              <source src="/videos/Scroll-kompresovan.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="macbook-img">
+          <div class="bg-image ov"></div>
+        <img src="/public/images/gg.png" alt="" class="macbook-image">
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  </section> -->
+      <section class="device-mockup-laptop">
+        <div class="macbook-container">
+          <div class="macbook-row">
+            <div class="macbook-col">
+              <div class="macbook-device">
+                <div class="screen-video">
+                  <div class="ov">
+                    <video autoplay muted loop class="op ov">
+                      <source
+                        src="/videos/Scroll-kompresovan.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="macbook-img">
+                  <div class="bg-image ov"></div>
+                  <img
+                    src="/public/images/device.png"
+                    alt="Macbook mockup"
+                    class="macbook-image"
+                  />
+                </div>
+              </div>
+              <!-- Zatvoreno macbook-device -->
+            </div>
+            <!-- Zatvoreno macbook-col -->
+          </div>
+          <!-- Zatvoreno macbook-row -->
+        </div>
+        <!-- Zatvoreno macbook-container -->
+      </section>
+
+      <div class="phone-container-s">
+        <section class="phone-container">
+          <div class="phone-item">
+            <div class="device">
+              <img
+                src="/public/images/iphone.png"
+                alt="MacBook Mockup"
+                class="macbook-image"
+              />
+            </div>
+          </div>
+          <div class="phone-item">
+            <div class="device">
+              <img
+                src="/public/images/iphone.png"
+                alt="MacBook Mockup"
+                class="macbook-image"
+              />
+            </div>
+          </div>
+          <div class="phone-item">
+            <div class="device">
+              <img
+                src="/public/images/iphone.png"
+                alt="MacBook Mockup"
+                class="macbook-image"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section">
+        <div class="section-video-con">
+          <div class="section-video-row">
+            <div class="section-video-col">
+              <div class="plate">
+                <div class="video-con">
+                  <div class="ov">
+                    <video autoplay muted loop class="ov mrt">
+                      <source
+                        src="/videos/Scroll-kompresovan.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section scroll-section-r">
+        <div class="section-video-con">
+          <div class="section-video-row">
+            <div class="section-video-col">
+              <div class="plate">
+                <div class="video-con">
+                  <div class="ov">
+                    <video autoplay muted loop class="ov mrt">
+                      <source
+                        src="/videos/Scroll-kompresovan.webm"
+                        type="video/webm"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-word-r">
+        <div class="footer-projects">
+          <div class="footer-container-s">
+            <h2 class="footer-title-proj">Next project</h2>
+            <div class="footer-projects-next">
+              <div class="projects-img-con">
+                <a href="">
+                  <img src="/public/images/Intro1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="projects-details">
+                <div class="projects-details-title">Lamonaide</div>
+                <div class="projects-details-text">
+                  This portfolio project showcases my front-end development
+                  skills with a focus on creating dynamic, interactive web
+                  experiences. The website is packed with smooth animations,
+                  custom transitions, and an engaging design. My goal was to
+                  present my work while also highlighting modern web development
+                  techniques.
+                </div>
+                <a href="" class="next-button"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>

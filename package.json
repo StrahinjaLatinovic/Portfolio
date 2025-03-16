@@ -1,0 +1,24 @@
+{
+  "name": "moj-projekat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "emailjs-com": "^3.2.0",
+    "flickity": "^3.0.0",
+    "gsap": "^3.12.7",
+    "imagesloaded": "^5.0.0",
+    "marquee3000": "^1.1.1",
+    "scroll-restoration-polyfill": "^0.6.1",
+    "split-type": "^0.3.4"
+  }
+}

@@ -1,0 +1,103 @@
+.device-mockup-laptop {
+  // background-color: rgb(221, 221, 221);
+  background-color: rgb(229, 224, 220);
+  position: relative;
+  display: block;
+  padding-bottom: clamp(5em, 21vh, 12em);
+  padding-top: clamp(5em, 21vh, 12em);
+}
+
+.macbook-container {
+  margin: 0 auto;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  max-width: 100em;
+}
+
+.macbook-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.macbook-col {
+  display: block;
+  width: 100%;
+  order: 2;
+  position: relative;
+}
+
+.screen-video {
+  width: 100%;
+
+  background: rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.macbook-col .screen-video {
+  width: 74.4%;
+  top: 47.3%;
+  left: 49.95%;
+  border-radius: 5px 5px 0 0;
+}
+.macbook-col .screen-video::before {
+  content: "";
+  display: block;
+  padding-top: 62.5%;
+  overflow: hidden;
+}
+.ov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.op {
+  object-fit: cover;
+}
+
+.macbook-img {
+  width: 100%;
+  position: relative;
+}
+
+.phone-container-s {
+  position: relative;
+  padding-inline: 6vh;
+  max-width: 100em;
+  margin: 0 auto;
+  background-color: rgb(229, 224, 220);
+}
+
+.phone-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.phone-item {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(5em, 21vh, 12em);
+}
+
+.device {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+.scroll-section-r {
+  position: relative;
+  z-index: 2;
+  padding-bottom: clamp(5em, 21vh, 12em);
+}
